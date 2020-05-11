@@ -1,0 +1,2 @@
+# User-Profiling-on-Twitter
+Studying user profile is important for many applications, ex: intelligent agents, adaptive systems, intelligent tutoring systems, recommender systems, intelligent e-commerce applications, etc. This is a web application that analyzes tweets of an input user (or any collection of tweets), and detects demographics (age, gender, country), topics of interest, dialect, etc. in addition to statistics and timeline of these tweets.
