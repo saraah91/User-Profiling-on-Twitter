@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>User Profiling on Twitter</title>
+      <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="top-section">
+         <div id="logo">
+            <img src="images/hbku_logo.png" />
+         </div>
+         <h1 class="title">User Profiling on Twitter</h1>
+         <div class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+         </div>
+      </div>
+      <div class="middle-section2">
+      <div class="middle-top">
+         <div  class="middle-top-top-left">
+            <img src="images/profile_pic_ex.jpg" id="profile_img"/>
+            </br>
+         </div>
+         <div class="middle-top-top-right">
+            <p class="name"> Full Name
+               <img src="images/verified.png" id="verified_symbol"/>
+               </br>
+               @nickname
+            </p>
+         </div>
+         <div class="row">
+            <div class="col">
+               <p id="bio">Bio</p>
+            </div>
+            <div class="col">
+               <div class="row">
+                  <div class="col">
+                     <div class="rcorners">
+                        <p id="number"> # </p>
+                     </div>
+                     <p class="number_desc"> Tweets</p>
+                     </br>
+                     <div class="rcorners">
+                        <p id="number"> # </p>
+                     </div>
+                     <p class="number_desc"> Listed </p>
+                  </div>
+                  <div class="col">
+                     <div class="rcorners">
+                        <p id="number"> # </p>
+                     </div>
+                     <p class="number_desc"> Following </p>
+                     </br>
+                     <div class="rcorners">
+                        <p id="number"> # </p>
+                     </div>
+                     <p class="number_desc"> Followers </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/demographics.png" class="top_symbol" />
+                     &emsp; Demographics
+                  </div>
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col">
+                           <h5 class="card-title">
+                              <img src="images/symbols/gender.png" class="symbol"/>
+                              Male/Female
+                           </h5>
+                        </div>
+                        <div class="col">
+                           <h5 class="card-title">
+                              <img src="images/symbols/age.png" class="symbol"/>
+                              Age
+                           </h5>
+                        </div>
+                        <div class="col">
+                           <h5 class="card-title">
+                              <img src="images/symbols/world.png" class="symbol"/>
+                              Country
+                           </h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/white_world.png" class="top_symbol"/>
+                     &emsp; Country
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">
+                        List of countries & percentages
+                     </h5>
+                  </div>
+               </div>
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/offensiveness.png" class="top_symbol"/>
+                     &emsp; Offensiveness
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">
+                        % Clear </br>
+                        % Offensive
+                     </h5>
+                  </div>
+               </div>
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/twitter_logo.png" class="top_symbol"/>
+                     &emsp; Tweets
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">
+                        Embedded window
+                     </h5>
+                  </div>
+               </div>
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/followers.png" class="top_symbol"/>
+                     &emsp; Followers
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">
+                        Followers usernames & profile pics
+                     </h5>
+                  </div>
+               </div>
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/following.png" class="top_symbol"/>
+                     &emsp; Following
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">
+                        Embedded window
+                     </h5>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/dialect.png" class="top_symbol"/>
+                     &emsp; Dialect
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">
+                        Dialects
+                     </h5>
+                  </div>
+               </div>
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/heart.png" class="top_symbol"/>
+                     &emsp; Topics of Interest
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">
+                        Piechart
+                     </h5>
+                  </div>
+               </div>
+               <div class="card bg-light mb-3">
+                  <div class="card-header" id="card-header2">
+                     <img src="images/symbols/analytics.png" class="top_symbol"/>
+                     &emsp; Analytics
+                  </div>
+                  <div class="card-body">
+                     <div class="card-title">
+                        <div class="row">
+                           <div class="col">
+                              #
+                              <img src="images/symbols/tweets_per_day.png" class="symbol"/>
+                              Tweets per day
+                           </div>
+                           <div class="col">
+                              #
+                              <img src="images/symbols/retweets.png" class="symbol"/>
+                              Retweets
+                           </div>
+                           <div class="w-100"></div>
+                           <div class="col">
+                              #
+                              <img src="images/symbols/mention.png" class="symbol"/>
+                              User mentions
+                           </div>
+                           <div class="col">
+                              #
+                              <img src="images/symbols/replies.png" class="symbol"/>
+                              Replies
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-header" id="card-header3">
+                        <img src="images/symbols/retweeted_white.png" class="top_symbol"/>
+                        &emsp; Users Mest Retweeted
+                     </div>
+                     <div class="card-body">
+                        <h5 class="card-title">
+                           Piechart
+                        </h5>
+                     </div>
+                     <div class="card-header" id="card-header3">
+                        <img src="images/symbols/replied_to_white.png" class="top_symbol"/>
+                        &emsp; Users Mest Replied to
+                     </div>
+                     <div class="card-body">
+                        <h5 class="card-title">
+                           Piechart
+                        </h5>
+                     </div>
+                     <div class="card-header" id="card-header3">
+                        <img src="images/symbols/mention_white.png" class="top_symbol"/>
+                        &emsp; Users Mest Mentioned
+                     </div>
+                     <div class="card-body">
+                        <h5 class="card-title">
+                           Piechart
+                        </h5>
+                     </div>
+                     <div class="card-header" id="card-header3">
+                        <img src="images/symbols/hashtag.png" class="top_symbol"/>
+                        &emsp; Hashtags Most Used
+                     </div>
+                     <div class="card-body">
+                        <h5 class="card-title">
+                           Piechart
+                        </h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
