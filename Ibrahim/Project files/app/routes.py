@@ -6,6 +6,7 @@ from flask import Flask, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
 from flask import send_from_directory
 from flask import render_template
+import functions
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'json', 'jsonl'}
 
@@ -14,6 +15,18 @@ def allowedFile(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route('/', methods=['GET', 'POST'])
+def do():
+    jamalTweets = functions.parseJSONTweets('jamalrayyan.jsonl')
+    resultsDict = {
+        "NoOfFollowers" : functions.getFollowers(jamalTweets[0]),
+        "NoOfFollowing" : functions.getFollowing(jamalTweets[0]),
+        "UserName" : functions.getName(jamalTweets[0]),
+        "TopLanguages" : functions.getTweetsLanguages(jamalTweets)
+    }
+    resultsJSON = json.dumps(resultsDict)
+    print(resultsJSON)
+    return render_template('index.html')
+'''
 def uploadFile():
     if request.method == 'POST':
         # check if the post request has the file part
@@ -31,6 +44,7 @@ def uploadFile():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('uploadedFile', filename=filename))
     return render_template('index.html')
+'''
 
     
 @app.route('/uploads/<filename>')
