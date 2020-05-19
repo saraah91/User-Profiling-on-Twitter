@@ -64,22 +64,22 @@ def getName(tweet):
 def getScreenName(tweet):
     return tweet['user']['screen_name']
 
+#get the description of the tweet's user
+#input: one tweet, output: string description 
+def getDescription(tweet):
+    return tweet['user']['description']
+
 #check if the tweet's user is verified 
 #input: one tweet, output: true/false
 def verifiedUser(tweet):
     if tweet['user']['verified'] == 'True':
         return True
 
-#get the description of the tweet's user
-#input: one tweet, output: string description 
-def getDescription(tweet):
-    return tweet['user']['description']
-
 #get the top hundred used hashtags used in a list of tweets
 #input: list of tweets, output: dict of sorted tweets
 def getTopHashtags(tweets):
     topHashtags = {}
-    HIGHEST_HASHTAGS = 100
+    HIGHEST_HASHTAGS = 10
     for tweet in tweets:
         for hashtag in tweet['entities']['hashtags']:
             one_hashtag = [hashtag['text']]
@@ -124,18 +124,18 @@ def getTweetsLanguages(tweets):
 '''
 for key,val in jamalTweets[1].items():
     print(key, "=>", val)
-print('\n')
+print('')
 for key,val in jamalTweets[1]['user'].items():
     print(key, "=>", val)
-print('\n')
+print('')
 for key,val in jamalTweets[1]['entities'].items():
     print(key, "=>", val)
 '''
-
+'''
 # doing random tests to check if functions are working
 #sortedTweets = sortTweetsByRetweetCount(tweets)
 #sortedTweets = sortTweetsByMostRecent(tweets)
-print('\n')
+print('')
 print('User Name:', getName(tweets[0]))
 print('User Screen Name:', getScreenName(tweets[0]))
 print('Nmber of Following:', getFollowing(tweets[0]))
@@ -148,14 +148,14 @@ if verifiedUser(tweets[0]):
     print('User is Verified')
 else: 
     print('User is Not Verified')
-print('\n')
+print('')
 
-'''
 print('Top Hashtags:')
 topHundredHashtags = getTopHashtags(jamalTweets)
 for key, value in topHundredHashtags.items():
     print(key, ' : ', value)
-'''
+
+
 print('Top Locations:')
 highestLocations = getTweetsLocation(tweets)
 for key, value in highestLocations.items():
@@ -164,10 +164,11 @@ for key, value in highestLocations.items():
             key = 'No Location Detected'
         print('{} : {}% ({} Tweets)'.format(key, str(percent)[:4], value))
 
-print('\n')
+print('')
 
 print('Top Languages:')
 highestLanguages = getTweetsLanguages(jamalTweets)
 for key, value in highestLanguages.items():
         percent = value * 100 / len(jamalTweets)
         print('{} : {}% ({} Tweets)'.format(key, str(percent)[:4], value))
+'''
