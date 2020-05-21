@@ -1,90 +1,5 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <title> User Profiling on Twitter </title>
-      <link rel="stylesheet" type="text/css" href="stylesheet.css">
-      <script src="javascript.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-   </head>
-   <body>
-      <div class = "top-section">
-         <div id="logo">
-            <img src="images/hbku_logo.png"/>
-         </div>
-         <h1 class="title"> User Profiling on Twitter</h1>
-         <div class="navbar">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
-         </div>
-      </div>
-      <div class="middle-section">
-         <div class="row1">
-            <img src="images/covid_words_cloud.jpg" id="img1">
-            <img src="images/map1.jpg" id="img2">
-            <img src="images/age_stats.jpg" id="img3">
-            <img src="images/piechart1.jpg" id="img4">
-            <img src="images/magnifier.jpg" id="img5">
-         </div>
-         <div class="row2">
-            <img src="images/twitter_logo.jpg" id="img6">
-            <img src="images/line_graph.jpg" id="img7">
-            <img src="images/covid_words_cloud2.png" id="img8">
-            <img src="images/map2.jpg" id="img9">
-            <img src="images/piechart2.jpg" id="img10">
-         </div>
-      </div>
-      <div class="bottom-section">
-         <div class="bottom-left">
-            <div class="description">
-               <img src="images/magnifier2.png" id="magnifier">
-               <p   id="subtitle"> What do we do? </br></p>
-               <div class="description">
-                  <p>
-                     We analyzes tweets of an input user (or any collection
-                     of tweets), & detects demographics (age, gender, country),
-                     topics of interest, dialect, etc. in addition to statistics &
-                     timeline of these tweets.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="bottom-right">
-            <img src="images/play_icon.png" id="play_icon">
-            <label for="upload" >
-            </br> To get started, please upload a Json file: </br></label>
 
-            <div class="upload">
-              <div class="input-group input-file">
-                <div class="form-control">
-                  <a href="/path/to/your/current_file_name.pdf" target="_blank">current_file_name.pdf</a>
-                </div>
-                <span class="input-group-addon">
-                    <button class='btn btn-primary' href='javascript:;' onload="upload()">
-                      <input type="file" id="fileToLoad" onchange="$(this).parent().parent().parent().find('.form-control').html($(this).val());">
-
-                      Browse
-                  </button>
-                </br>
-              </br>
-                  <button class='btn btn-secondary' onclick="sendFile()">
-                    Send
-                  </button>
-                </span>
-
-              </div>
-         </div>
-      </div>
-      <div id="stats">
-               <div class="middle-section2">
+      <div class="middle-section2">
       <div class="middle-top">
          <div  class="middle-top-top-left">
             <img src="images/profile_pic_ex.jpg" id="profile_img"/>
@@ -310,6 +225,4 @@
             </div>
          </div>
       </div>
-</div>
-   </body>
-</html>
+    </div>
